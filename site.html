@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Плеер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .track {
+            margin: 20px 0;
+        }
+        audio {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Музыкальный Плеер</h1>
+</header>
+
+<div class="container">
+    <h2>Слушай свою любимую музыку</h2>
+
+    <div class="track">
+        <h3>Трек 1: Название песни</h3>
+        <audio controls>
+            <source src="FACE_-_YUmorist_62083353.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиотег.
+        </audio>
+    </div>
+
+    <div class="track">
+        <h3>Трек 2: Название песни</h3>
+        <audio controls>
+            <source src="FACE_-_PODRUGA_PODRUG_61822141.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиотег.
+        </audio>
+    </div>
+
+    <div class="track">
+        <h3>Трек 3: Название песни</h3>
+        <audio controls>
+            <source src="Face_-_Antidepressant_48841418.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиотег.
+        </audio>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Музыкальный Плеер</p>
+</footer>
+
+</body>
+</html>
